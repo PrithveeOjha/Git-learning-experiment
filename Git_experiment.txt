@@ -1,0 +1,251 @@
+prithvee@DESKTOP-34PFJF6:/mnt/d/Projects/new_project$ cd ..
+prithvee@DESKTOP-34PFJF6:/mnt/d/Projects$ mkdir my_new_project
+prithvee@DESKTOP-34PFJF6:/mnt/d/Projects$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /mnt/d/Projects/.git/
+prithvee@DESKTOP-34PFJF6:/mnt/d/Projects$ touch .gitignore
+prithvee@DESKTOP-34PFJF6:/mnt/d/Projects$ git commit
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        new_project/
+
+nothing added to commit but untracked files present (use "git add" to track)
+prithvee@DESKTOP-34PFJF6:/mnt/d/Projects$ git add .
+warning: adding embedded git repository: new_project
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint:
+hint:   git submodule add <url> new_project
+hint:
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint:
+hint:   git rm --cached new_project
+hint:
+hint: See "git help submodule" for more information.
+prithvee@DESKTOP-34PFJF6:/mnt/d/Projects$ rm -rf my_new_project\
+> ^C
+prithvee@DESKTOP-34PFJF6:/mnt/d/Projects$ rm -rf my_new_project
+prithvee@DESKTOP-34PFJF6:/mnt/d/Projects$ cd ..
+prithvee@DESKTOP-34PFJF6:/mnt/d$ mkdir my_new_project
+prithvee@DESKTOP-34PFJF6:/mnt/d$ cd my_new_project/
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /mnt/d/my_new_project/.git/
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ touch .gitignore
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git add .
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git commit
+Aborting commit due to empty commit message.
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git commit -m "initial commit"
+[master (root-commit) 4373a73] initial commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ mkdir src
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ mkdir lib
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ touch script.sh
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ touch baka.py
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git reset --mixed
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git log
+commit 4373a7382a1e02fd6757935d8fd7221141adfb7b (HEAD -> master)
+Author: Prithvee <ojhaprithvee@gmail.com>
+Date:   Wed Aug 30 22:57:22 2023 +0530
+
+    initial commit
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git reset --hard
+HEAD is now at 4373a73 initial commit
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git add .
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git commit
+Aborting commit due to empty commit message.
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git commit -m "new addition"[master b50830c] new addition
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 baka.py
+ create mode 100644 script.sh
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git checkout -b dev
+Switched to a new branch 'dev'
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git checkout master
+Switched to branch 'master'
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git brack -a
+git: 'brack' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git branch -a
+  dev
+* master
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git checkout dev
+Switched to branch 'dev'
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git commit -m"farzi commit"\> ^C
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git commit -m"farzi commit"
+On branch dev
+nothing to commit, working tree clean
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git branch -a
+* dev
+  master
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ touch bajajScooter\
+> ^C
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ touch bajajScooter
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git commit
+On branch dev
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        bajajScooter
+
+nothing added to commit but untracked files present (use "git add" to track)prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ mv -mf bajajScooter bajajSooter.stroke
+mv: invalid option -- 'm'
+Try 'mv --help' for more information.
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ mv --help
+Usage: mv [OPTION]... [-T] SOURCE DEST
+  or:  mv [OPTION]... SOURCE... DIRECTORY
+  or:  mv [OPTION]... -t DIRECTORY SOURCE...
+Rename SOURCE to DEST, or move SOURCE(s) to DIRECTORY.
+
+Mandatory arguments to long options are mandatory for short options too.
+      --backup[=CONTROL]       make a backup of each existing destination file
+  -b                           like --backup but does not accept an argument  -f, --force                  do not prompt before overwriting
+  -i, --interactive            prompt before overwrite
+  -n, --no-clobber             do not overwrite an existing file
+If you specify more than one of -i, -f, -n, only the final one takes effect.      --strip-trailing-slashes  remove any trailing slashes from each SOURCE                                 argument
+  -S, --suffix=SUFFIX          override the usual backup suffix
+  -t, --target-directory=DIRECTORY  move all SOURCE arguments into DIRECTORY  -T, --no-target-directory    treat DEST as a normal file
+  -u, --update                 move only when the SOURCE file is newer
+                                 than the destination file or when the
+                                 destination file is missing
+  -v, --verbose                explain what is being done
+  -Z, --context                set SELinux security context of destination
+                                 file to default type
+      --help     display this help and exit
+      --version  output version information and exit
+
+The backup suffix is '~', unless set with --suffix or SIMPLE_BACKUP_SUFFIX.
+The version control method may be selected via the --backup option or through
+the VERSION_CONTROL environment variable.  Here are the values:
+
+  none, off       never make backups (even if --backup is given)
+  numbered, t     make numbered backups
+  existing, nil   numbered if numbered backups exist, simple otherwise
+  simple, never   always make simple backups
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/mv>
+or available locally via: info '(coreutils) mv invocation'
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ mv bajajScooter bajajSooter.stroke
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git add .
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git commit
+Aborting commit due to empty commit message.
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git commit -"ek aur farzi commit"
+error: unknown switch `k'
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup [(amend|reword):]commit
+                          use autosquash formatted message to fixup or amend/reword specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    --trailer <trailer>   add custom trailer(s)
+    -s, --signoff         add a Signed-off-by trailer
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <mode>      how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --ahead-behind        compute full ahead/behind values
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+    --pathspec-from-file <file>
+                          read pathspec from file
+    --pathspec-file-nul   with --pathspec-from-file, pathspec elements are separated with NUL character
+
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git commit -m "ek aur farzi
+commit"
+[dev b9bff41] ek aur farzi commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bajajSooter.stroke
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ touch version.txt
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git add .
+\prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git status
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   version.txt
+
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git commit
+[dev 1c673b4] version 1.0 commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 version.txt
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git checkout master
+Switched to branch 'master'
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$ git merge dev
+Updating b50830c..1c673b4
+Fast-forward
+ bajajSooter.stroke | 1 +
+ version.txt        | 1 +
+ 2 files changed, 2 insertions(+)
+ create mode 100644 bajajSooter.stroke
+ create mode 100644 version.txt
+prithvee@DESKTOP-34PFJF6:/mnt/d/my_new_project$
